@@ -16,6 +16,9 @@ public class SearchBar extends TextFieldWidget {
 
     Row villagerParent;
 
+    static private String prevText = "";
+    // private boolean didSavedSearch = false;
+
     UITexture VANILLA_SEARCH_BACKGROUND = UITexture.builder()
         .location(UtilitiesInExcess.MODID, "gui/vanilla_search")
         .imageSize(18, 18)
@@ -28,6 +31,7 @@ public class SearchBar extends TextFieldWidget {
         super();
         background(VANILLA_SEARCH_BACKGROUND);
         hintText(StatCollector.translateToLocal("tile.trading_post.search_hint"));
+        // value(new StringValue(prevText));
     }
 
     @Override
@@ -43,8 +47,6 @@ public class SearchBar extends TextFieldWidget {
         return this;
     }
 
-    private String prevText = "";
-
     @Override
     public void onUpdate() {
         super.onUpdate();
@@ -54,6 +56,13 @@ public class SearchBar extends TextFieldWidget {
             doSearch(txt);
             prevText = txt;
         }
+        // else if (!didSavedSearch) {
+        // long timeSinceLastReceived = System.currentTimeMillis() - VillagerSyncHandler.lastRecieved;
+        // if (timeSinceLastReceived > 10 && timeSinceLastReceived < 1000) {
+        // doSearch(prevText);
+        // didSavedSearch = true;
+        // }
+        // }
     }
 
     public void doSearch(String search) {

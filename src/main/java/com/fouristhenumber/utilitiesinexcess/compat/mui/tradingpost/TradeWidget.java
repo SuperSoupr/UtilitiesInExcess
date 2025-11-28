@@ -43,7 +43,7 @@ public class TradeWidget extends ParentWidget<TradeWidget> implements Interactab
         super();
         this.recipe = _recipe;
 
-        background(GuiTextures.BUTTON_CLEAN);
+//        background(GuiTextures.BUTTON_CLEAN);
         this.coverChildren();
 
         ItemStack item;

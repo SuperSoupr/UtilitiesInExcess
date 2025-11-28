@@ -2,6 +2,7 @@ package com.fouristhenumber.utilitiesinexcess.compat.mui.tradingpost;
 
 import java.util.List;
 
+import com.cleanroommc.modularui.drawable.GuiTextures;
 import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.IMerchant;
 import net.minecraft.village.MerchantRecipe;
@@ -26,6 +27,7 @@ public class VillagerWidget extends Column {
         super();
         this.data = data;
         this.manager = manager;
+        background(GuiTextures.BUTTON_CLEAN);
 
         if (merchant != null) {
             villagerSyncHandler = new VillagerSyncHandler(

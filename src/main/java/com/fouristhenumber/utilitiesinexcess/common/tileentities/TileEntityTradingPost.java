@@ -55,7 +55,7 @@ public class TileEntityTradingPost extends TileEntity implements IGuiHolder<PosG
             VillagerColumn columnOfVillagers = new VillagerColumn();
             columnOfVillagers.alignY(0)
                 .coverChildren()
-                .childPadding(2);
+                .childPadding(1);
 
             // In MUI2 latest I had issues with the dynamic sizing of the panel
             // So these dummy trades were required to always keep it the same size
@@ -79,7 +79,7 @@ public class TileEntityTradingPost extends TileEntity implements IGuiHolder<PosG
                 merchant,
                 ((VillagerColumn) tradeListRow.getChildren()
                     .get(i)));
-            villagerTrades.coverChildren();
+            villagerTrades.coverChildren().childPadding(1);
             ((VillagerColumn) tradeListRow.getChildren()
                 .get(i)).child(villagerTrades);
             i = i < 2 ? i + 1 : 0;
