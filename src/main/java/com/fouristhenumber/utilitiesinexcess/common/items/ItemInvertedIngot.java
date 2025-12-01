@@ -18,6 +18,7 @@ import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
 
 import com.fouristhenumber.utilitiesinexcess.config.items.InversionConfig;
+import com.gtnewhorizon.gtnhlib.api.ITranslucentItem;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -122,5 +123,15 @@ public class ItemInvertedIngot extends Item {
     public void getSubItems(Item item, CreativeTabs tab, List<ItemStack> list) {
         list.add(new ItemStack(item, 1, 0));
         list.add(new ItemStack(item, 1, 1));
+    }
+
+    public static class ItemInvertedNugget extends Item implements ITranslucentItem {
+
+        public ItemInvertedNugget() {
+            super();
+
+            setUnlocalizedName("inverted_nugget");
+            setTextureName("utilitiesinexcess:inverted_nugget");
+        }
     }
 }

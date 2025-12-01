@@ -19,8 +19,9 @@ import net.minecraft.world.World;
 import com.fouristhenumber.utilitiesinexcess.config.items.unstabletools.GluttonsAxeConfig;
 import com.fouristhenumber.utilitiesinexcess.mixins.early.minecraft.accessors.AccessorEntityZombie;
 import com.fouristhenumber.utilitiesinexcess.mixins.early.minecraft.accessors.AccessorItemTool;
+import com.gtnewhorizon.gtnhlib.api.ITranslucentItem;
 
-public class ItemGluttonsAxe extends ItemAxe {
+public class ItemGluttonsAxe extends ItemAxe implements ITranslucentItem {
 
     public ItemGluttonsAxe() {
         super(ToolMaterial.EMERALD);

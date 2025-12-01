@@ -15,9 +15,10 @@ import net.minecraft.util.Vec3;
 import net.minecraft.world.World;
 
 import com.fouristhenumber.utilitiesinexcess.common.renderers.XRayRenderer;
+import com.gtnewhorizon.gtnhlib.api.ITranslucentItem;
 import com.gtnewhorizon.gtnhlib.blockpos.BlockPos;
 
-public class ItemXRayGlasses extends ItemArmor {
+public class ItemXRayGlasses extends ItemArmor implements ITranslucentItem {
 
     static final int reach = 5;
 
