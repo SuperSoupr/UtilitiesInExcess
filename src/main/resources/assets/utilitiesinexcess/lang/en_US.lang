@@ -483,3 +483,5 @@ uie.colored_blocks.color.12=Colored %s (Brown)
 uie.colored_blocks.color.13=Colored %s (Dark Green)
 uie.colored_blocks.color.14=Colored %s (Red)
 uie.colored_blocks.color.15=Colored %s (Black)
+
+uie.world_conversion.warning=WARNING!!\nThe Extra Utilities mod has been replaced with Utilities In Excess.\nAfter pressing "Yes" every item in your world from Extra Utilities\nwill be replaced with their Utilities In Excess counterpart.\nWe recommend making a backup of this world before proceeding.
