@@ -29,17 +29,16 @@ public class ColoredBlocksConfig {
     public boolean enableDying;
 
     @Config.Order(300)
-    @Config.Comment({ "Add extra blocks to be turned into colored blocks", "",
-        "Format: MODID;BLOCKNAME;DAMAGE;BRIGHTNESS;TEXTUREDOMAIN;TEXTURENAME",
+    @Config.Comment({ "WARNING! THIS IS AN ADVANCED CONFIG OPTION!",
+        "If you don't know what you're doing do not touch.", "", "Add extra blocks to be turned into colored blocks",
+        "", "Format: MODID;BLOCKNAME;DAMAGE;BRIGHTNESS;TEXTUREDOMAIN;TEXTURENAME",
         "   MODID: Mod ID of the mod that adds the block. NOT DOMAIN. (example: \"minecraft\")",
         "   BLOCKNAME: Name of the block (example: \"wool\")",
         "   BRIGHTNESS: (OPTIONAL) Brightness multiplier (example: \"2.5\")",
         "   TEXTUREDOMAIN: (OPTIONAL) Domain for override texture (example: \"utilitiesinexcess\")",
         "   TEXTURENAME: (OPTIONAL) Name for override texture (example: \"textures/blocks/block_update_detector_active.png\")",
-        "", "Example: minecraft;dirt",
-        "Example: utilitiesinexcess;block_update_detector;1.5;utilitiesinexcess;textures/blocks/block_update_detector_active.png",
-
-    })
+        "Optional values are required if you want to use an optional value after them", "", "Example: minecraft;dirt",
+        "Example: utilitiesinexcess;block_update_detector;1.5;utilitiesinexcess;textures/blocks/block_update_detector_active.png", "" })
     @Config.DefaultStringList({})
     @Config.RequiresMcRestart
     public String[] extraColoredBlocks;
